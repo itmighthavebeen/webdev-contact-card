@@ -1,0 +1,188 @@
+/* CSS Reset */
+@import url("reset.css");
+
+/* Body styles */
+body {
+  display:grid;
+  justify-items:center;
+  display-items:center;
+  place-items:center;
+  padding: 2rem;
+  width: 100%; /* Ensure body takes full width */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: auto;
+  height: 100dvh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  a {
+    text-decoration: none; /* Removes underline */
+    color: #007bff; /* Sets link color */
+  }
+
+  a:hover {
+    color: #ff5733; /* Changes color when the link is hovered over */
+  }
+}
+
+/* Contact card grid layout */
+.contact-card-grid {
+  display: grid;
+  grid-template-rows: 100px 2fr auto; /* 3 rows: image and text */
+  gap: 10px; /* Adds space between the rows */
+
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+
+  border: 4px solid antiquewhite;
+  width: 100%;
+  margin: 0.4rem auto;
+  border-radius: 0.45rem;
+  overflow-wrap: break-word; /* Ensures breaking is handled properly */
+}
+
+/* Profile image styling */
+.co_name img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circle shape */
+  max-width: 150px;
+  border: 3px solid #ddd;
+  padding: 5px;
+}
+/* prague circle photo */
+.article-photo {
+  border: 4px solid #2a2a2c;
+  width: 50%;
+  margin: 0.25rem auto;
+  border-radius: 0.75rem;
+  height: auto;
+  vertical-align: middle;
+  overflow-wrap: break-word;
+}
+
+/* Contact information */
+.article-eins {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: fit-content;
+  padding: 0.5rem; /*padding around contact details */
+  border: 4px solid #2c2c2c;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0.75rem;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Hover effect */
+.contact-card-grid:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media only screen and (min-width: 500px) {
+  body {
+    display:grid;
+    justify-items:center;
+    display-items:center;
+    place-items:center;
+    background-color: white;
+    height: 85dvh;
+    font-size: 2vw;
+  }
+  /* prague circle photo */
+  .article-photo {
+    width: 80%; /* Adjust image width for smaller screens */
+    height: 100%;
+    max-width: 30%; /* Prevent image from getting too large */
+  }
+  /* Contact Card Layout (Grid-based) */
+  .contact-card-grid {
+    display: grid;
+    grid-template-columns: 2fr; /* 1 column layout*/
+    gap: 1rem; /* Space between grid items */
+    max-height: fit-content;
+  }
+
+  /* Article Layout */
+  .article-eins {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.5fr 0.5fr; /*  width of 4 columns */
+    gap: 1rem; /* Space between columns */
+    width: 100%;
+    align-items: center;
+    justify-items: center; /* Centers the content within each grid item */
+  }
+
+  /* Co Name, Co Seal, Contact Detail */
+  .co_name,
+  .co_seal,
+  .contact_detail {
+    grid-column: span 1; /* These items will each take one column */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display:grid;
+    justify-items:center;
+    display-items:center;
+    place-items:center;
+    background-color: rgb(248, 249, 246);
+    height: 100dvh; /* Use of 100dvh for full viewport height */
+    align-items:center;
+    justify-content: center;
+    font-size: 1.3vw; /* Font size based on viewport width */
+  }
+
+  /* Contact Card Layout (Grid-based) */
+  .contact-card-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 3fr; /* Two columns */
+    gap: 2rem; /* Space between grid items */
+    max-width: 100vh; /* Max width for the container */
+    max-height: 60vh; /* Max height for the container */
+  }
+
+  /* Article container (Grid layout) */
+  .article-eins {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0rem; /* Space between items */
+    height: 170%;
+  }
+
+  /* Company Name, Seal, and Contact Details */
+  .co_name,
+  .contact_detail {
+    width: 100%; /* Adjust image width for smaller screens */
+    padding: 0rem; /* Padding inside the image */
+  }
+  .co_seal {
+    width: 15%;
+  }
+
+  /* Article Photo */
+  .article-photo {
+    display: grid; /* Ensure it behaves as a block element */
+    width: 80%; /* Adjust image width for smaller screens */
+    height:170%;
+    align-content: center;
+    grid-template-columns: auto;
+    justify-content: center;
+    max-width: 95%; /* Limit the max width */
+    padding: 0rem; /* Padding inside the image */
+    margin: 0 auto; /* Center the image */
+  }
+}

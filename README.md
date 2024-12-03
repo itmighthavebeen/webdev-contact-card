@@ -4,8 +4,7 @@ The purpose of this challenge is to create a responsive contact card using flexb
 
 You will use this wireframe as a guide to complete your project.
 
-![Example Mockup](./wireframes/example-mockup.png)  
-
+![Example Mockup](./wireframes/example-mockup.png)
 
 ## Instructions
 
@@ -31,22 +30,32 @@ Follow these steps to fork and clone the repository:
 To view the project locally, you can either open the project files in your code editor or open the HTML files in your browser.
 
 ### Tasks
+
 In `index.html`, add the following for your contact card:
-- [ ] A Profile Image (your image should be stored in the images folder)
-- [ ] A Name
-- [ ] Title
-- [ ] Phone Number
-- [ ] Company Name
+
+- [x] A Profile Image (your image should be stored in the images folder)
+- [x] A Name
+- [x] Title
+- [x] Phone Number
+- [x] Company Name
 
 In `style.css`, do the following:
-- [ ] Include the css reset in this file. If you are unsure how to do this, please refer to the last assignment.
-- [ ] Write two media queries to account for larger sized screens. Use the breakpoint sizes from the example wireframe or adjust them to fit your card.
-- [ ] Ensure that your card is centered horizontally on all device sizes.
 
+- [x] Include the css reset in this file. If you are unsure how to do this, please refer to the last assignment.
+- [x] Write two media queries to account for larger sized screens. Use the breakpoint sizes from the example wireframe or adjust them to fit your card.
+- [x] Ensure that your card is centered horizontally on all device sizes.
 
 **BONUS**
-- [ ] Make your contact card centered vertically, as well as horizontally.
+
+- [x] Make your contact card centered vertically, as well as horizontally.
 
 ### Submitting Your Work
 
 After completing the assignment, make sure to commit your changes and push them back to your own repository and turn in the GitHub link in Google Classroom.
+
+### Work submitted with these changes:
+
+1. The working index and css files are called contact_card_index.html and contact_grid_index.html
+   and contact_card_style.css and contact_grid_style.css
+2. The project contains two contact cards, one in flex and one in grid.
+3. Item to be worked on in next release - better display for very large screens >1400
